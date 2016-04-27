@@ -1,13 +1,14 @@
 
 import java.lang.*;
 
-public class Triangle {
+public class Triangle extends Shape{
 	
 	double side1;
 	double side2;
 	double side3;
 	
-	public Triangle(double side1, double side2, double side3) {
+	public Triangle(double side1, double side2, double side3,int id) {
+		super(id);
 		this.side1 = side1;
 		this.side2 = side2;
 		this.side3 = side3;
@@ -56,7 +57,7 @@ public class Triangle {
 	}
 	
 	void printinfo(){
-		
+		System.out.format("Triangle with an id of %d, width of %lf, height of %lf, area of %lf, and perimeter of %lf",getId(),getSide1(),2*calculateArea()/getSide1(),calculateArea(),calculatePerimeter());
 	}
 	
 	

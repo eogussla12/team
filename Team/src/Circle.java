@@ -1,11 +1,12 @@
 
 import java.lang.*;
 
-public class Circle {
+public class Circle extends Shape{
 	
 	double radius;
 
-	public Circle(double radius) {
+	public Circle(double radius, int id) {
+		super(id);
 		this.radius = radius;
 	}
 
@@ -22,12 +23,12 @@ public class Circle {
 		return Math.PI*getRadius()*getRadius();
 	}
 	
-	double calculatePrimeter(){
+	double calculatePerimeter(){
 		return 2*Math.PI*getRadius();
 	}
 	
-	void printinfo(){
-		
+	void printInfo(){
+		System.out.format("Circle with an id of %d, radius of %lf, area of %lf, and perimeter of %lf",getId(),getRadius(),calculateArea(),calculatePerimeter());
 	}
 	
 }
