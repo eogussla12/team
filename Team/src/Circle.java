@@ -29,6 +29,7 @@ public class Circle extends Shape{
 	
 	void printInfo(){
 		System.out.format("Circle with an id of %d, radius of %lf, area of %lf, and perimeter of %lf",getId(),getRadius(),calculateArea(),calculatePerimeter());
+		
 	}
 	
 }

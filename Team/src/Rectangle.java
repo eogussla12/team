@@ -3,13 +3,16 @@
 public class Rectangle extends Shape{
 	private double width;
 	private double height;
+	private int id;
 	
-	public Rectangle(double width, double height,int id){
+
+	
+	public Rectangle( double width, double height, int id) {
 		super(id);
-		this.width=width;
-		this.height=height;
+		this.width = width;
+		this.height = height;
 	}
-	
+
 	public double getWidth() {
 		return width;
 	}
@@ -37,6 +40,7 @@ public class Rectangle extends Shape{
 	
 	public void printInfo(){
 		System.out.format("Rectangle with an id of %d, width of %lf, height of %lf, area of %lf, and perimeter of %lf",getId(),getWidth(),getHeight(),calculateArea(),calculatePerimeter());
+	
 	}
 	
 	public void drawRectangle(){
