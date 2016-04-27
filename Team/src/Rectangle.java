@@ -10,6 +10,22 @@ public class Rectangle extends Shape{
 		this.height=height;
 	}
 	
+	public double getWidth() {
+		return width;
+	}
+
+	public void setWidth(double width) {
+		this.width = width;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
 	public double calculateArea(){
 		
 		return width*height;
@@ -20,7 +36,7 @@ public class Rectangle extends Shape{
 	}
 	
 	public void printInfo(){
-		System.out.format("Rectangle with an id of %d, width of %lf, height of %lf, area of %lf, and perimeter of %lf",getId(),getSide1(),2*calculateArea()/getSide1(),calculateArea(),calculatePerimeter());
+		System.out.format("Rectangle with an id of %d, width of %lf, height of %lf, area of %lf, and perimeter of %lf",getId(),getWidth(),getHeight(),calculateArea(),calculatePerimeter());
 	}
 	
 	public void drawRectangle(){
