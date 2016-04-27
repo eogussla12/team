@@ -21,4 +21,8 @@ public class Rectangle {
 		
 	}
 	
+	public void drawRectangle(){
+		
+	}
+	
 }
