@@ -56,7 +56,7 @@ public class Triangle extends Shape{
 		return getSide1()+getSide2()+getSide3();
 	}
 	
-	void printinfo(){
+	void printInfo(){
 		System.out.format("Triangle with an id of %d, width of %lf, height of %lf, area of %lf, and perimeter of %lf",getId(),getSide1(),2*calculateArea()/getSide1(),calculateArea(),calculatePerimeter());
 	}
 	
