@@ -19,7 +19,7 @@ public class Rectangle extends Shape{
 	}
 	
 	public void printInfo(){
-		
+		System.out.format("Rectangle with an id of %d, width of %lf, height of %lf, area of %lf, and perimeter of %lf",getId(),getSide1(),2*calculateArea()/getSide1(),calculateArea(),calculatePerimeter());
 	}
 	
 	public void drawRectangle(){
