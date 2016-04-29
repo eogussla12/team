@@ -40,6 +40,7 @@ public class Rectangle extends Shape{
 	
 	public void printInfo(){
 		System.out.format("Rectangle with an id of %d, width of %f, height of %f, area of %f, and perimeter of %f",getId(),getWidth(),getHeight(),calculateArea(),calculatePerimeter());
+		System.out.println();
 	
 	}
 	
